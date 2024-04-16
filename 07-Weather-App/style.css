@@ -21,7 +21,7 @@ section {
 
 .card {
     border: 1px solid rgb(145, 145, 145);
-    padding: 25px 20px;
+    padding: 2rem;
     border-radius: 8px;
     background-color: hsla(210, 88%, 27%, 0.077);
 }
@@ -30,7 +30,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 15px 10px 15px;
+    padding: 15px;
 }
 .search input{
     background: transparent;
@@ -55,7 +55,7 @@ section {
 .error{
     padding-left: 1.6rem;
     font-size: 1.1rem;
-    color: rgb(228, 43, 40);
+    color: rgb(199, 24, 21);
     font-style: italic;
     display: none;
 }
@@ -65,20 +65,19 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding-top: 20px; */
     color: #ffffff;
 }
 .city-name{
-    padding: 1.2rem;
-    font-size: 1.6rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 #temp{
-    padding: 5px 0 20px 0;
+    padding: 5px 0 10px 0;
     font-size: 2.5rem;
 }
 #condition{
     font-size: 1.1rem;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .more-weather-1, .more-weather-2{
@@ -105,4 +104,27 @@ section {
 }
 .more-w-data{
     font-size: 1.2rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px){
+    .card {
+        padding: 1.2rem;
+    }
+    .search{
+        padding: 10px;
+    }
+    .error{
+        font-size: 1rem;
+    }
+    .more-w{
+        width: 44%;
+        margin: 5px auto;
+    }
+    .search input{
+        width: 180px;
+    }
+    .city-name{
+        padding: 0.75rem;
+    }
 }

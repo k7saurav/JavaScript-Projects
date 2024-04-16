@@ -21,17 +21,14 @@ body{
 
 .box{
     /* border: 2px solid black; */
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 1.5rem;
     background-color: rgb(57, 67, 82);
     border-radius: 5px;
 }
 
-
 .clock-box{
     padding: 2rem;
-    border-radius: 1rem;
 }
-
 
 .clock-time{
     font-family: 'Aldrich', sans-serif;
@@ -61,6 +58,7 @@ body{
 #am-pm{
     align-self: flex-start;
     padding: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .clock-date{
@@ -75,7 +73,39 @@ body{
     background: transparent;
     border: none;
     cursor: pointer;
+    margin-left: 12px;
 }
 #dark{
     display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+    .box{
+        padding: 0.75rem;
+    }  
+    .clock-box{
+        padding: 0.75rem;
+    }
+    .clock-time{
+        font-size: 1.75rem;
+    }
+    .time-text {
+        width: 70px;
+        padding: 0.5rem;
+    }
+    .t-text{
+        font-size: 0.8rem;
+    }
+    .colon{
+        padding: 0.25rem;
+    }
+    .clock-date{
+        font-size: 1.125rem;
+        padding-top: 0.4rem;
+    }
+    #am-pm{
+        font-size: 1.2rem;
+        padding: 0.4rem;
+    }
 }

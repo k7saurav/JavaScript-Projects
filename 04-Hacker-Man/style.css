@@ -38,3 +38,12 @@ body{
     height: 80vh;
     border-radius: 1rem;
 }
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+    
+}
+
+@media only screen and (max-width: 576px){
+
+}
