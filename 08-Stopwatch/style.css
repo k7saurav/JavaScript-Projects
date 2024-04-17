@@ -20,6 +20,14 @@ section{
     align-items: center;
     justify-content: center;
 }
+h2{
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+h3{
+    font-size: 1.75rem;
+}
 
 .box{
     display: flex;
