@@ -1,0 +1,259 @@
+/* This is the stylesheet for HomePage of this website */
+
+/* Custom CSS Variables */
+:root {
+   --color-1: #f36347;
+   --color-2: #1a1a1a;
+   --color-3: #dce4eb;
+   --color-bg: rgba(1, 1, 1, 0.42);
+}
+
+/* homepage banner design */
+#home-banner-bgi {
+   background: url("../Images/bg-home.jpg") no-repeat top center/cover;
+}
+.home-banner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   height: 96vh;
+   background-color: var(--color-bg);
+   text-align: center;
+}
+
+/* Quotes section design */
+#quotes-section {
+   padding: 4rem 0;
+   background-color: var(--color-3);
+}
+#quotes {
+   width: 70%;
+   margin: auto;
+   text-align: center;
+}
+#quotes-sign {
+   width: 350px;
+}
+/* Services Home design */
+#services-home-bgi {
+   background: url("../Images/bg-services-home.jpg") no-repeat top center/cover;
+}
+.services-home-heading {
+   padding: 4rem 2rem;
+   background-color: var(--color-bg);
+   height: 320px;
+}
+/* service home boxes design */
+.services-home-content {
+   display: flex;
+   width: 88%;
+   margin: auto;
+   padding: 0 0 1rem;
+   margin-top: -80px;
+   background-color: white;
+}
+.services-home-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 3rem 1.5rem;
+}
+#services-home-box-1 {
+   border-bottom: 2px solid #f0f0f0;
+   border-left: 2px solid #f0f0f0;
+}
+#services-home-box-2 {
+   box-shadow: 0 5px 5px 2px #f0f0f0;
+}
+#services-home-box-3 {
+   border-bottom: 2px solid #f0f0f0;
+   border-right: 2px solid #f0f0f0;
+}
+#services-home-box-1:hover {
+   box-shadow: 0 5px 5px 0 #f0f0f0;
+   transition: 300ms;
+}
+#services-home-box-3:hover {
+   box-shadow: 0 5px 5px 0 #f0f0f0;
+   transition: 300ms;
+}
+.services-home-box > h4,
+p {
+   padding: 6px 0;
+}
+.services-home-box > i {
+   font-size: 2rem;
+   padding: 10px;
+}
+.services-home-box > i:hover {
+   color: var(--color-1);
+   scale: 1.15;
+   transition: 400ms;
+}
+
+/* Workout schedule design */
+.img-and-content {
+   display: flex;
+}
+#bgi-workout-schedule {
+   background: url("../Images/workout-schedule.jpg") no-repeat top center/cover;
+}
+#bgi-about-trainer {
+   background: url("../Images/about-trainer.jpg") no-repeat center center/cover;
+}
+.image-part-bgi,
+.content-part {
+   width: 50%;
+}
+/* .content-part{
+   width: 50%;
+} */
+.image-part-heading {
+   display: flex;
+   /* flex-direction: column; */
+   align-items: center;
+   justify-content: center;
+   height: 640px;
+   background-color: var(--color-bg);
+}
+
+/* img-and-content section */
+
+/* training schedule content */
+.content-part {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   box-shadow: 5px 0 8px 3px #f0f0f0;
+}
+.workout-timing {
+   display: flex;
+   width: 80%;
+   padding: 1.5rem 0;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid lightgray;
+}
+.schedule-part > h4 {
+   border-left: 3px solid var(--color-1);
+   padding: 0 8px;
+}
+
+/* about the trainer section */
+.img-and-content-reverse {
+   flex-direction: row-reverse;
+}
+.about-trainer {
+   width: 80%;
+}
+
+/* Review section styling */
+.review-sec {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.review-box {
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+}
+.reviews {
+   width: 30%;
+   padding: 1.1rem;
+   padding-right: 1.5rem;
+   margin: 12px;
+   box-shadow: 5px 0 8px 3px #f0f0f0;
+   border-radius: 7px;
+}
+.review-h4 {
+   display: flex;
+   justify-content: space-between;
+}
+.review-img {
+   height: 70px;
+   border-radius: 50px;
+}
+.span-review {
+   border-left: 2px solid var(--color-1);
+   padding-left: 8px;
+}
+
+/* Responsive designing for other devices */
+@media only screen and (max-width: 768px) {
+   /* Quotes section */
+   #quotes {
+      width: 85%;
+   }
+   #quotes-sign {
+      width: 260px;
+   }
+
+   /* Services Home */
+   .services-home-heading {
+      height: 240px;
+   }
+   .services-home-content {
+      width: 95%;
+      padding: 2rem 0.2rem;
+      margin-top: 0;
+   }
+   .services-home-box {
+      padding: 2.5rem 1.5rem;
+   }
+
+   /* img-and-content section */
+   .img-and-content {
+      flex-direction: column;
+   }
+   .image-part-bgi,
+   .content-part {
+      width: 100%;
+   }
+   .workout-timing,
+   .about-trainer {
+      width: 90%;
+   }
+   .content-part {
+      box-shadow: 0 5px 8px 3px #f0f0f0;
+      padding: 2rem 0 4rem;
+   }
+   .image-part-heading {
+      height: 360px;
+   }
+
+   /* review section */
+   .review-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .reviews {
+      width: 88%;
+      margin: 16px;
+      padding-right: 2rem;
+   }
+}
+
+/* Responsive designing for other devices: 2 */
+@media only screen and (max-width: 576px) {
+   /* Services Home */
+   #services-home-box-1,
+   #services-home-box-3 {
+      border: none;
+   }
+   .services-home-content {
+      flex-direction: column;
+   }
+
+   /* img-and-content section */
+   .image-part-heading {
+      height: 260px;
+   }
+}

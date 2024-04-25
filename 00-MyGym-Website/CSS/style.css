@@ -1,0 +1,349 @@
+/* This is the universal stylesheet for this website: applies on all pages */
+
+/* CSS reset for the browser setting */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+/* Custom CSS Variables */
+:root {
+   --color-1: #f36347;
+   --color-2: #1a1a1a;
+   --color-3: #dce4eb;
+}
+
+/* Utility Classes for universal uses */
+h1 {
+   font-size: 3.1rem;
+   color: var(--color-3);
+}
+.h-span {
+   color: var(--color-1);
+}
+h2 {
+   font-size: 2.1rem;
+}
+h4 {
+   font-size: 1.2rem;
+   padding: 5px 0;
+   font-weight: 500;
+}
+.h-white,
+.p-white {
+   color: var(--color-3);
+}
+p {
+   font-size: 0.96rem;
+   color: var(--color-2);
+}
+.p-small {
+   font-size: 0.9rem;
+}
+.p-large {
+   font-size: 1.06rem;
+   padding: 10px;
+}
+.p-article {
+   line-height: 1.8;
+}
+.blank-height {
+   height: 5rem;
+}
+/* Utility Classes for responsive */
+@media only screen and (max-width: 768px) {
+   h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+   }
+   h2 {
+      font-size: 1.85rem;
+   }
+   p {
+      font-size: 0.9rem;
+   }
+}
+@media only screen and (max-width: 576px) {
+   h1 {
+      font-size: 1.8rem;
+   }
+   h2 {
+      font-size: 1.6rem;
+   }
+}
+
+/* Universal Button style */
+.btn {
+   padding: 7px 22px;
+   width: 225px;
+   background-color: var(--color-1);
+   color: white;
+   font-size: 0.94rem;
+   font-weight: 500;
+   border: 2px solid var(--color-1);
+   border-radius: 25px;
+   transition: 300ms;
+   cursor: pointer;
+}
+.btn:hover {
+   background-color: white;
+   color: var(--color-1);
+}
+
+.btn-2 {
+   padding: 10px 25px;
+   font-size: 0.94rem;
+   font-weight: 500;
+   border: 2px solid lightgray;
+   border-radius: 25px;
+   transition: 300ms;
+   cursor: pointer;
+}
+.btn-2:hover {
+   border-color: var(--color-1);
+   background-color: var(--color-1);
+   color: white;
+}
+
+/* ~~ end of universal styling ~~ */
+
+/* Header styling */
+.header {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 25px;
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   z-index: 11;
+   transition: all 500ms;
+}
+/* active event for changing header color on scroll */
+.header.active {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 25px;
+   background-color: rgba(1, 1, 1, 0.8);
+   position: fixed;
+   top: 0;
+   z-index: 11;
+   transition: all 500ms;
+}
+
+.logo > a img {
+   width: 64px;
+}
+
+/* Navbar styling */
+.navbar {
+   display: flex;
+   width: 80%;
+   align-items: center;
+   justify-content: center;
+}
+.nav-links {
+   display: flex;
+}
+.nav-links li {
+   list-style: none;
+}
+.nav-links li a {
+   text-decoration: none;
+   padding: 5px 15px;
+   color: white;
+   font-size: 1.05rem;
+   /* border: 1px solid transparent; */
+   border-radius: 25px;
+   transition: 400ms;
+}
+.nav-links li a:hover {
+   /* border: 1px solid white; */
+   background-color: var(--color-1);
+}
+
+/* navbar social icons */
+.social {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.social img {
+   width: 25px;
+   margin: 0 6px;
+   transition: 300ms;
+}
+.social img:hover {
+   scale: 1.15;
+}
+
+/* toggle-btn for responsive design */
+.toggle-btn {
+   color: white;
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+}
+/* dropdown menu for responsive design */
+.dropdown-menu {
+   display: none;
+   position: absolute;
+   right: 2rem;
+   top: 80px;
+   width: 300px;
+   height: 0;
+   background: rgba(38, 38, 38, 0.113);
+   backdrop-filter: blur(15px);
+   border-radius: 12px;
+   overflow: hidden;
+}
+.dropdown-menu.open {
+   height: 240px;
+}
+
+/* Footer Styling */
+footer {
+   background-color: #1a1a1a;
+   padding: 20px 0;
+}
+footer p {
+   font-size: 0.96rem;
+}
+#footer {
+   padding: 0 10px;
+   display: flex;
+}
+.footer-box {
+   display: flex;
+   flex-direction: column;
+   margin: 5px 20px;
+}
+#ft-intro-box {
+   text-align: justify;
+   width: 42%;
+}
+#ft-contact-box {
+   width: 25%;
+}
+#ft-news-box {
+   width: 31%;
+}
+/* footer brief contact info and newsletter design */
+.footer-contact {
+   display: flex;
+   align-items: center;
+   padding: 5px;
+}
+.footer-contact > i {
+   font-size: 1.2rem;
+   color: white;
+}
+.footer-contact p {
+   padding: 0 20px;
+}
+/* footer news letter form design */
+#footer-form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#ft-email {
+   font-size: 0.94rem;
+   padding: 8px 15px;
+   margin: 8px 0;
+   border-radius: 25px;
+   border: none;
+}
+.ft-form {
+   width: 225px;
+}
+/* Footer Copyright style */
+#copyright {
+   display: block;
+   margin: 5px auto;
+   text-align: center;
+   width: 80%;
+   background-color: #373737;
+   padding: 8px;
+   border-radius: 25px;
+}
+
+/* Responsive designing for other devices */
+@media only screen and (max-width: 768px) {
+   /* header responsiveness */
+   .navbar,
+   .social {
+      display: none;
+   }
+   .header {
+      justify-content: space-between;
+   }
+   .header.active {
+      justify-content: space-between;
+   }
+   .links-media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+   }
+   .links-media li {
+      padding: 10px;
+   }
+   .logo > a img {
+      width: 60px;
+   }
+   .toggle-btn {
+      display: block;
+   }
+   .dropdown-menu {
+      display: block;
+   }
+   /* end of header responsive design */
+
+   /* footer responsiveness */
+   #footer {
+      flex-direction: column-reverse;
+   }
+   #ft-intro-box {
+      padding-right: 2rem;
+      width: 100%;
+   }
+   #ft-contact-box {
+      width: 100%;
+   }
+   #ft-news-box {
+      width: 100%;
+   }
+   #footer-form {
+      flex-direction: row;
+      justify-content: left;
+      flex-wrap: wrap;
+   }
+   #footer-form > input,
+   button {
+      margin: 5px 5px;
+   }
+   #ft-intro-box > p {
+      padding-right: 1.2rem;
+   }
+   /* end of footer responsive design */
+}
+
+/* Responsive designing for other devices:- 2 */
+@media only screen and (max-width: 576px) {
+   /* responsiveness for dropdown */
+   .dropdown-menu {
+      left: 2rem;
+      width: unset;
+   }
+   .logo > a img {
+      width: 56px;
+   }
+}
